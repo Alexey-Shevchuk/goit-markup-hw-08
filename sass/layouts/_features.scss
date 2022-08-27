@@ -1,0 +1,32 @@
+.section--features {
+    padding-bottom: 0px;
+}
+
+.features {
+    display: flex;
+    margin-left: calc(-1 * 30px);
+}
+
+.features__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+}
+
+.features__icon {
+    @include centeredFlex();
+
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+}
+
+.features__title {
+    @include subtitle();
+    margin-bottom: 10px;
+}
+
+.features__desc {
+    @include font(14px, 400, 24px);
+}

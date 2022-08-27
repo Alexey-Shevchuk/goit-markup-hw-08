@@ -1,0 +1,36 @@
+.clients {
+    display: flex;
+}
+
+.clients__item {
+    width: 170px;
+    height: 92px;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.clients__link {
+    @include centeredFlex();
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--team-social-icon-color);
+    border-radius: 4px;
+    transition: border-color var(--primary-animation);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.clients__icon {
+    fill: var(--team-social-icon-color);
+    transition: fill var(--primary-animation);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--accent-color);
+    }
+}

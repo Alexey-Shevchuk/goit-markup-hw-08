@@ -1,0 +1,101 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-bg-color);
+}
+
+.container--footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-block {
+    &:nth-child(1) {
+        flex-grow: 1;
+    }
+
+    &:nth-child(2) {
+        margin-right: 93px;
+        margin-left: 70px;
+    }
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address__list {
+    font-style: normal;
+    @include font(14px, 400, 24px);
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__map {
+    @extend %link;
+    color: var(--primary-bg-color);
+}
+
+.address__link {
+    @extend %link;
+    color: var(--footer-contacts-color);
+}
+
+.footer-block__subtitle {
+    @include subtitle($color: var(--primary-bg-color));
+    margin-bottom: 20px;
+}
+
+.subscriprion-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscriprion-form__email {
+    margin-right: 12px;
+}
+
+.subscriprion-form__input {
+    height: 50px;
+    width: 358px;
+
+    @include font(16px, 400, 20px);
+    color: var(--footer-contacts-color);
+
+    padding-left: 16px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.subscription-button__data {
+    right: 28px;
+    @include centeredFlex();
+}
+
+.subscription-button__icon {
+    margin-left: 10px;
+    fill: var(--primary-bg-color);
+
+    transition: fill var(--primary-animation);
+
+    .subscription-button:hover &,
+    .subscription-button:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+.subscription-button {
+    @extend %button;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        background-color: var(--primary-bg-color);
+    }
+}

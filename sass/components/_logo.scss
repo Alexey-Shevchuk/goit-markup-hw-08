@@ -1,0 +1,14 @@
+.logo {
+    @extend %link;
+    @include font(26px, 700, 31px);
+    font-family: "Raleway", sans-serif;
+    color: var(--accent-color);
+}
+
+.logo__studio-header {
+    color: var(--logo-studio-header-color);
+}
+
+.logo__studio-footer {
+    color: var(--primary-bg-color);
+}

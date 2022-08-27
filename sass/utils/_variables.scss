@@ -1,0 +1,44 @@
+:root {
+    /* основний колір тексту */
+    --primary-text-color: #757575;
+    /* колір ссилок ховер */
+    --accent-color: #2196f3;
+    /* другорядний колір тексту */
+    --title-text-color: #212121;
+    /* колір тексту заголовка в Герої */
+    --order-title-text-color: #fff;
+    /* фон сторінки вебсайту */
+    --primary-bg-color: #fff;
+    /* другорядний фон сторінки(футер та замовлення послу) */
+    --footer-bg-color: #2f303a;
+    /* колір контактів в футері */
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    /* колір лого "студіо" в хедері */
+    --logo-studio-header-color: #000;
+    /* колір фону ""Наша команда */
+    --secondary-bg-color: #f5f4fa;
+    /* фон кнопки в hero-btn */
+    --background-color-hero-btn: #188CE8;
+    /* колір бордерів */
+    --border-color: #ECECEC;
+    /* колір бордеру-портфоліо */
+    --border-portfolio: #eeeeee;
+
+    --hero-overlay-color: rgba(47, 48, 58, 0.4);
+    --footer-social-bg-color: rgba(255, 255, 255, 0.1);
+    --team-social-icon-color: #afb1b8;
+    --project-overlay-color: rgba(33, 150, 243, 0.9);
+    --work-overlay-color: rgba(47, 48, 58, 0.8);
+    --backdrop-color: rgba(0, 0, 0, 0.2);
+    --modal-btn-hover: #188ce8;
+    --primary-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --main-margin: 30px;
+    --secondary-margin: 50px;
+    --small-margin: 10px;
+    --portfolio-address-margin: 20px;
+    --main-title-size: 16px;
+    --main-text-size: 14px;
+    --main-border-radius: 4px;
+
+}

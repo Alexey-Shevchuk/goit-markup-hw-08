@@ -1,0 +1,18 @@
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin font($fs, $fw, $lh, $ls: 0.03em) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+    letter-spacing: $ls;
+}
+
+@mixin subtitle($color: var(--title-text-color)) {
+    @include font(14px, 700, 16px);
+    text-transform: uppercase;
+    color: $color;
+}
