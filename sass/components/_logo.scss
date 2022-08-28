@@ -3,6 +3,9 @@
     @include font(26px, 700, 31px);
     font-family: "Raleway", sans-serif;
     color: var(--accent-color);
+    @media screen and (min-width: 1200px) {
+     @include font(26px, 700, 31px);
+        }
 }
 
 .logo__studio-header {

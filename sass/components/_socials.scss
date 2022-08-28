@@ -23,6 +23,11 @@
 }
 
 footer {
+    .socials {
+        @media screen and (min-width: 1200px) {
+        justify-content: left;
+            }
+        }
     .socials__link {
         background-color: var(--footer-social-bg-color);
     }

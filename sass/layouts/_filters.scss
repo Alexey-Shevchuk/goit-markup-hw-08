@@ -1,10 +1,27 @@
 .filters {
-    @include centeredFlex();
+display: flex;
+flex-wrap: wrap;
+margin-left: calc(-1 * 8px);
+margin-bottom: calc(-1 * 15px);
+
+@media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    }
+
+@media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    }
 }
 
-.filters__item:not(:first-child) {
+.filters__item {
     margin-left: 8px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
 
 .filters__button {

@@ -1,13 +1,20 @@
+.section--works {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .works {
     display: flex;
-    margin-left: calc(-1 * 30px);
 }
 
 .works__item {
-    position: relative;
+position: relative;
     overflow: hidden;
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
 }
 
 .works__label {
