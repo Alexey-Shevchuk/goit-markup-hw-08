@@ -44,8 +44,57 @@
             </a>
         </li>
         </ul>
+         <button type="button" class="menu-open__button" data-menu-open>
+            <svg class="menu-open__icon" width="24" height="16">
+                <use href="./images/icons/icons.svg#icon-mob-menu"></use>
+            </svg>
+        </button>
+         </div>
+                 <div class="backdrop is-hidden" data-menu>
+            <div class="mob-menu">
+                <div class="mob-menu__content">
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item">
+                            <a href="./index.html" class="mob-menu__link mob-menu__link--current">Студия</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="" class="mob-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mob-menu__bottom">
+                        <a href="tel:+380961111111" class="mob-menu__tel">
+                            +38 096 111 11 11
+                        </a>
+                        <a href="mailto:info@devstudio.com" class="mob-menu__email">
+                            info@devstudio.com
+                        </a>
+                        <ul class="menu-socials__list">
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">Instagram</a>
+                            </li>
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">Twitter</a>
+                            </li>
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">Facebook</a>
+                            </li>
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="menu-close__button" data-menu-close>
+                    <svg class="menu-close__icon" width="19" height="19">
+                        <use href="./images/icons/icons.svg#icon-mob-menu-close"></use>
+                    </svg>
+                </button>
             </div>
-         </header>
+        </div>
+     </header>
          <!--================Основний контент(HERO)==============-->
          <main>
             <section class="hero">
@@ -100,34 +149,79 @@
         </div>
             </section>
 
-            <section class="section">
+            <section class="section section--works">
                 <div class="container">
                     <h2 class="section-title">Чим ми займаємося</h2>
                     <ul class="works">
                         <li class="works__item">
-                            <img src="./images/what-we-do/process1.jpg" alt="верстка" width="370" height="294">
-                        <div class="works__label">
+                    <img
+                    srcset="./images/works/box_1.jpg 1x,
+                    ./images/works/box_1-2x.jpg 2x"
+                    src="./images/works/box_1.jpg"
+                    alt="Руки на клавіатурі перед планшетом"
+                    width="370">
+                    <div class="works__label">
                             <h3 class="works__title">Десктопні додатки</h3>
                         </div>
                         </li>
-                        <li class="works__item"><img src="./images//what-we-do/process2.jpg" alt="дизайн" width="370" height="294">
-                        <div class="works__label">
+                        <li class="works__item">
+                    <img
+                    srcset="./images/works/box_2.jpg 1x,
+                    ./images/works/box_2-2x.jpg 2x"
+                    src="./images/works/box_2.jpg"
+                    alt="В лівій руці смартфон, права рука - на тачпаді ноутбука. На екрані ноутбука макети смартфонів"
+                    width="370">
+                    <div class="works__label">
                             <h3 class="works__title">Мобільні додатки</h3>
                         </div>
                         </li>
-                        <li class="works__item"><img src="./images//what-we-do/process3.jpg" alt="стиль" width="370" height="294">
-                        <div class="works__label">
+                        <li class="works__item">
+                    <img
+                    srcset="./images/works/box_3.jpg 1x,
+                    ./images/works/box_3-2x.jpg 2x"
+                    src="./images/works/box_3.jpg"
+                    alt="В лівій руці планшет, в правій маркер, руки знаходяться над комп'ютерним столом"
+                    width="370">
+                    <div class="works__label">
                             <h3 class="works__title">Дизайнерські рішення</h3>
                         </div>
                         </li>
                     </ul>
                 </div>
          </section>
+
             <section class="section section--team">
                 <div class="container">               
                      <h2 class="section-title">Наша команда</h2>
                     <ul class="team">
-                        <li class="team__item"><img src="./images/our-team/jober1.jpg" alt="працівник_1" width="270" height="260" class="member-image">
+                        <li class="team__item">
+                    <picture>
+                        <source
+                            srcset="
+                                ./images/team/desktop/team_1.jpg 1x,
+                                ./images/team/desktop/team_1-2x.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                        >
+                        <source
+                            srcset="
+                                ./images/team/tablet/team_1_tab.jpg 1x,
+                                ./images/team/tablet/team_1_tab-2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                        >
+                        <source
+                            srcset="
+                                ./images/team/mobile/team_1_mob.jpg 1x,
+                                ./images/team/mobile/team_1_mob-2x.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                        >                        
+                        <img
+                            src="./images/team/mobile/team_1_mob.jpg"
+                            alt="Мужчина-шатен с бородой и в очках улыбается"
+                            class="member-image">
+                    </picture>                      
                             <div class="team__content">
                             <h3 class="team__title">Ігор Дем'яненко</h3>
                             <p lang="en" class="team__desc" >Product Designer</p>
@@ -163,7 +257,8 @@
                             </ul>
                         </div>
                         </li>
-                        <li class="team__item"><img src="./images/our-team/jober2.jpg" alt="працівник_2" width="270" height="260" class="member-image">
+                        <li class="team__item">
+                            <img src="./images/our-team/jober2.jpg" alt="працівник_2" width="270" height="260" class="member-image">
                             <div class="team__content">
                             <h3 class="team__title">Ольга Рєпіна</h3>
                             <p lang="en" class="team__desc">Frontend Developer</p>
