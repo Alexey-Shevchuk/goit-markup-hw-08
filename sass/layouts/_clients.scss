@@ -24,6 +24,7 @@ height: 92px;
 @media screen and (min-width: 1200px) {
     width: 170px;
     }
+}
 
 .clients__link {
     @include centeredFlex();
