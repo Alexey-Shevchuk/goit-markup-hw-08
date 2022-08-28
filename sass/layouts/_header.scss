@@ -29,8 +29,8 @@ header {
         margin-right: 93px;
     }
 }
-.menu-open__button,
-.menu-close__button {
+.menu-open-button,
+.menu-close-button {
     width: 40px;
     height: 40px;
     display: flex;
@@ -45,14 +45,14 @@ header {
     }
 }
 
-.menu-open__icon,
-.menu-close__icon {
+.menu-open-button__icon,
+.menu-close-button__icon {
     transition: fill var(--primary-animation);
 
-    .menu-open__button:hover &,
-    .menu-open__button:focus &,
-    .menu-close__button:hover &,
-    .menu-close__button:focus & {
+    .menu-open-button:hover &,
+    .menu-open-button:focus &,
+    .menu-close-button:hover &,
+    .menu-close-button:focus & {
         fill: var(--accent-color);
     }
 }
@@ -120,7 +120,7 @@ header {
     color: inherit;
 }
 
-.menu-socials__list {
+.menu-socials-list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 64px;
@@ -134,7 +134,7 @@ header {
     }
 }
 
-.menu-socials__item {
+.menu-socials-list__item {
     &:not(:last-child) {
         padding-right: 10px;
         border-right: 1px solid var(--socials-border-color);
@@ -151,7 +151,7 @@ header {
     }
 }
 
-.menu-socials__link {
+.menu-socials-list__link {
     @extend %link;
     display: block;
     @include font(18px, 500, 22px, 0.02em);
