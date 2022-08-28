@@ -583,30 +583,6 @@
             </div>
     </div>
     </footer>
-    
-    <!-- скрипт хэдэра -->
-    <script>
-        const { height: pageHeaderHeight } = document
-            .querySelector(".header")
-            .getBoundingClientRect();
-
-        document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script>
-
-    <!-- скрипт для форм -->
-<script>
-    (() => {
-        document
-            .querySelector('.js-speaker-form')
-            .addEventListener('submit', e => {
-                e.preventDefault();
-
-                new FormData(e.currentTarget).forEach((value, name) =>
-                    console.log(`${name}: ${value}`),
-                );
-            });
-    })();
-</script>
 
 <!-- скрипт мобильного меню -->
    <script src="./js/mobile-menu.js"></script>
