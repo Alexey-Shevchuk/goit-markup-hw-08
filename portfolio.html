@@ -44,10 +44,59 @@
                 </svg>
                 +38 096 111 11 11
             </a>
-            </li>
-        </ul>
+        </li>
+     </ul>
+        <button type="button" class="menu-open__button" data-menu-open>
+         <svg class="menu-open__icon" width="24" height="16">
+         <use href="./images/icons/icons.svg#icon-mob-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header>
+        <div class="backdrop is-hidden" data-menu>
+            <div class="mob-menu">
+                <div class="mob-menu__content">
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item">
+                            <a href="./index.html" class="mob-menu__link">Студия</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="./portfolio.html" class="mob-menu__link mob-menu__link--current">Портфолио</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="" class="mob-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mob-menu__bottom">
+                        <a href="tel:+380961111111" class="mob-menu__tel">
+                            +38 096 111 11 11
+                        </a>
+                        <a href="mailto:info@devstudio.com" class="mob-menu__email">
+                            info@devstudio.com
+                        </a>
+                        <ul class="menu-socials__list">
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">Instagram</a>
+                            </li>
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">Twitter</a>
+                            </li>
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">Facebook</a>
+                            </li>
+                            <li class="menu-socials__item">
+                                <a href="" class="menu-socials__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="menu-close__button" data-menu-close>
+                    <svg class="menu-close__icon" width="19" height="19">
+                        <use href="./images/icons/icons.svg#icon-mob-menu-close"></use>
+             </svg>
+         </button>
+    </div>
+ </div>
+</header>
 <!--================Основний контент(HERO)==============-->
 <main>
     <section class="section">
@@ -74,7 +123,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-1.jpg" alt="Веб-сайт на экране макбука" width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/portfolio/desktop/project_1.jpg 1x,
+                                        ./images/portfolio/desktop/project_1-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                >
+                                <source
+                                    srcset="
+                                        ./images/portfolio/tablet/project_1_tab.jpg 1x,
+                                        ./images/portfolio/tablet/project_1_tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                >
+                                <source
+                                    srcset="
+                                        ./images/portfolio/mobile/project_1_mob.jpg 1x,
+                                        ./images/portfolio/mobile/project_1_mob-2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                >
+                                <img
+                                    src="./images/portfolio/mobile/project_1_mob.jpg"
+                                    alt="Веб-сайт на екрані макбука"
+                                >
+                            </picture>
     <div class="projects__overlay">
             <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -91,7 +166,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-2.jpg" alt="Два баскетболиста" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_2.jpg 1x,
+                                    ./images/portfolio/desktop/project_2-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_2_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_2_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_2_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_2_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_2_mob.jpg"
+                                alt="Два баскетболісти"
+                            >
+                        </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -104,11 +205,37 @@
     <p class="projects__desc" >Дизайн</p>
 </div>
 </a>
-    </li>
+</li>
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-3.jpg" alt="Полупрозрачная рыба и надпись на первом плане" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_3.jpg 1x,
+                                    ./images/portfolio/desktop/project_3-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_3_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_3_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_3_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_3_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_3_mob.jpg"
+                                alt="Напівпрозора риба і надпис на першому плані"
+                            >
+                        </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -125,7 +252,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-4.jpg" alt="Наушники" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_4.jpg 1x,
+                                    ./images/portfolio/desktop/project_4-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_4_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_4_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_4_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_4_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_4_mob.jpg"
+                                alt="Навушники"
+                            >
+                        </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -138,11 +291,37 @@
     <p class="projects__desc" >Маркетинг</p>
 </div>
 </a>
-    </li>
+</li>
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-5.jpg" alt="Две коробки" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_5.jpg 1x,
+                                    ./images/portfolio/desktop/project_5-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_5_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_5_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_5_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_5_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_5_mob.jpg"
+                                alt="Дві коробки"
+                            >
+                        </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -159,7 +338,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-6.jpg" alt="Монитор с веб-сайтом на экране" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_6.jpg 1x,
+                                    ./images/portfolio/desktop/project_6-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_6_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_6_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_6_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_6_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_6_mob.jpg"
+                                alt="Монітор з веб-сайтом на екрані"
+                            >
+                    </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -176,7 +381,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-7.jpg" alt="Открытый журнал" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_7.jpg 1x,
+                                    ./images/portfolio/desktop/project_7-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_7_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_7_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_7_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_7_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_7_mob.jpg"
+                                alt="Відкритий журнал"
+                            >
+                     </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -193,7 +424,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-8.jpg" alt="Лейбл" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_8.jpg 1x,
+                                    ./images/portfolio/desktop/project_8-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_8_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_8_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_8_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_8_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_8_mob.jpg"
+                                alt="Етикетка"
+                            >
+                    </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -210,7 +467,33 @@
     <li class ="projects__item">
 <a href="" class="projects__link">
     <div class="projects__thumb">
-    <img src="./images/portfolio/project-9.jpg" alt="Руки на клавиатуре ноутбука" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/portfolio/desktop/project_9.jpg 1x,
+                                    ./images/portfolio/desktop/project_9-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/tablet/project_9_tab.jpg 1x,
+                                    ./images/portfolio/tablet/project_9_tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/portfolio/mobile/project_9_mob.jpg 1x,
+                                    ./images/portfolio/mobile/project_9_mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                            <img
+                                src="./images/portfolio/mobile/project_9_mob.jpg"
+                                alt="Руки на клавіатурі ноутбука"
+                            >
+                    </picture>
     <div class="projects__overlay">
         <p class="projects__text">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -275,7 +558,7 @@
                     </li>
                 </ul>
             </div>
-                        <div class="footer-block">
+                <div class="footer-block">
                 <h3 class="footer-block__subtitle">Підпишіться на розсилку</h3>
                 <form class="subscriprion-form" autocomplete="off">
                     <div class="subscriprion-form__email">
@@ -324,6 +607,8 @@
             });
     })();
 </script>
-    </body>
-    
-    </html>
+
+<!-- скрипт мобильного меню -->
+   <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
